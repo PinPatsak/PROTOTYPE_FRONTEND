@@ -18,7 +18,8 @@ import { PolarChartComponent } from './polar-chart/polar-chart.component';
 import { RadarChartComponent } from './radar-chart/radar-chart.component';
 import { DataService } from './data.service';
 import { ChartsModule as Ng2Charts } from 'ng2-charts';
-
+import { TagCloudModule } from 'angular-tag-cloud-module';
+import { WordCloudComponent } from './word-cloud/word-cloud.component';
 
 @NgModule({
     declarations: [HomeComponent,
@@ -27,9 +28,9 @@ import { ChartsModule as Ng2Charts } from 'ng2-charts';
         DonutChartComponent,
         LineChartComponent,
         PieChartComponent,
-        PolarChartComponent
-
-        , RadarChartComponent],
+        PolarChartComponent,
+        RadarChartComponent,
+        WordCloudComponent],
     imports: [
         CommonModule,
         DashboardRoutingModule,
@@ -39,7 +40,8 @@ import { ChartsModule as Ng2Charts } from 'ng2-charts';
         MatTableModule,
         MatButtonModule,
         MatIconModule,
-        Ng2Charts
+        Ng2Charts,
+        TagCloudModule
     ],
     providers: [DataService]
 })
